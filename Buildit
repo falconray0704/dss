@@ -71,7 +71,7 @@ case $PLAT in
 		CORE_LINK_LIBS="-lpthread -ldl -lstdc++ -lm -lcrypt"
 
 		SHARED=-shared
-		MODULE_LIBS=
+		MODULE_LIBS="-lpthread"
 		
 		if [ -f /usr/include/socketbits.h ]; then
 			NEED_SOCKETBITS=1
